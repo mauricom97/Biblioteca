@@ -26,9 +26,9 @@ function alterar(){
     alerta.innerHTML = 'Verifique as informações do livro antes de alterar.'
     var codigo = document.getElementById('codigo')
     var titulo = document.getElementById('titulo')
-    titulo.innerHTML = (`Codigo: ${iAlterar}`)
+    titulo.innerHTML = (`Alterar livros`)
     var opcao = document.getElementById('opcao');
-    opcao.innerHTML = ('<input type="button" value="Alterar Livro" class="btn btn-warning">')
+    opcao.innerHTML = ('<input type="submit" value="Alterar" class="btn btn-warning" >')
     
     }
 
@@ -40,14 +40,14 @@ function excluir(){
     var inputCodigo = document.getElementById('inputCodigo')
     inputCodigo.value = `${iExcluir}`
     var titulo = document.getElementById('titulo')
-    titulo.innerHTML = (`Codigo: ${iExcluir}`)
+    titulo.innerHTML = (`Excluir livros`)
     var opcao = document.getElementById('opcao');
-    opcao.innerHTML = ('<input type="button" value="Excluir Livro" class="btn btn-danger">')
+    opcao.innerHTML = ('<input type="submit" value="Excluir" class="btn btn-danger">')
 }
 
 
 function inserir(){
-    var inputCodigo = document.getElementById("inputCodigo").disabled = true;
+    document.getElementById('inputCodigo').style.display = 'none';
     var titulo = document.getElementById('titulo')
     titulo.innerHTML = ('Incluir livros')
     var opcao = document.getElementById('opcao');
@@ -79,12 +79,12 @@ function verifica(){
         excluir();
         document.getElementById("titulo1").disabled = true;
         document.getElementById("autor").disabled = true;
-        document.getElementById("inputCodigo").disabled = true;
+        document.getElementById('inputCodigo').style.display = 'none';
         document.getElementById("numPaginas").disabled = true;
         clearInterval(valVerifica);
     }else if(urlAtual == `http://localhost/biblioteca/formLivro.php?acao=a&cod=${iAlterar}`){
         alterar();
-        document.getElementById("inputCodigo").disabled = true;
+        document.getElementById('inputCodigo').style.display = 'none';
         clearInterval(valVerifica);
     }
 }
@@ -97,5 +97,6 @@ function verificaDados(){
     }
 }
 
-var valVerfica = setInterval(verifica, alterar, 5);
+
+var valVerfica = setInterval(verifica, alterar, 1);
 

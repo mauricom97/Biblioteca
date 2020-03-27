@@ -27,12 +27,6 @@ footer
     text-align: center;
     font-style: italic;
 }
-#fSenha{
-    background-color: darkgray;
-}
-#fUsuario{
-    background-color: darkgray;
-}
 #titulo{
     color: white;
 }
@@ -90,4 +84,17 @@ footer
 }
 #bibliotecaP{
     text-align: center;
+    margin: 2%;
+    height: 116px;
+    
+}
+#login{
+    background-color: rgb(84, 2, 122);
+    border-radius: 35px;
+    padding: 15px;
+    width: 320px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 200);
+    margin: 40px;
 }

@@ -9,24 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <center><h1>Biblioteca</h1></center>
-    </header>
-
-    <section>
+<center>
+    <section id="login">
 
         <div>
-            <center><h1 id="titulo">Login do usuario</h1></center>
+            <center><h1 id="titulo">Login usuario</h1></center>
         </div>
             <form action="entrar.php" method="post">
             <table>
                 <tr>
                 <td><label id="user" for="fUsuario">Usuario:</label></td>
-                <td><input type="text" id="fUsuario" name="fUsuario"></td>
+                <td><input type="text" placeholder="exemple.demonstration" id="fUsuario" name="fUsuario"></td>
             </tr>
             <tr>
                 <td><label id="pass" for="fSenha">Senha:</label></td>
-                <td><input type="password" id="fSenha" name="fSenha"></td>
+                <td><input type="password" placeholder="Password" id="fSenha" name="fSenha"></td>
             </tr>
             <br>
             <tr>
@@ -40,6 +37,7 @@
 
         </div>
     </section>
+</center>
     <footer>
         
     </footer>

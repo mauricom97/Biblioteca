@@ -1,8 +1,9 @@
 <?php
-    $urlAtual = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    
     $pegaCodigo = $_GET['cod'];
+    $pegaAcao = $_GET['acao'];
     $verificacao = 0;
-
+   
     
         include "conexao.php";
         //include "seguranca.php";
@@ -16,7 +17,9 @@
             $listaLivros[] = $livros;
         }
     
-
+        function alterarLivro(){
+            echo "ola";
+        }
 
     ?>
 
@@ -35,7 +38,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="verifica();">
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="http://localhost/biblioteca/lista.php">
+    <img src="https://cdn.pixabay.com/photo/2016/10/06/19/02/book-1719737_960_720.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Biblioteca
+  </a>
+</nav>
     <header>
         <center><h1 id="titulo">#Informação</h1></center>
     </header>
@@ -46,10 +55,18 @@
             
         </div>
         
-            <form method="POST" action="processa.php">
+            <?php if($pegaAcao == 'i' ){ 
+            echo "<form method='POST' action='processa.php'>";
+        }else if($pegaAcao == 'a'){
+            echo "<form method='GET' action='altera.php'>";
+        }else if($pegaAcao == 'e'){
+            echo "<form method='GET' action='exclui.php'>";
+        }
+        ?>
+
+
             
-            <label id="labelCodigo">Codigo Automatico:</label>
-            <input id="inputCodigo" value="<?php echo $pegaCodigo ?>" type="number" placeholder="Codigo" max="9999999" min="0"><br><br>
+            <input name="inputCodigo" id="inputCodigo" value="<?php echo $pegaCodigo ?>" type="number" placeholder="Codigo" max="9999999" min="0"><br><br>
             
             <label id="nomeTitulo">Titulo do livro:</label><br>
             <input type="text" value="<?php echo $livro['livTitulo']; ?>" id="titulo1" name="titulo1" placeholder="Titulo | Ex: Narnia"><br><br>
@@ -62,6 +79,9 @@
                 <p id="alerta"></p>
             <center><div id="opcao"></div></center>
             </form>
+          
+
+             
     </section>
     <footer>
         
