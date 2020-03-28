@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start($usu);
 include "conexao.php";
 include "seguranca.php";
 

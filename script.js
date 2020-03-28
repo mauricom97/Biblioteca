@@ -1,3 +1,4 @@
+//Verifica se os dados dos livros foram preenchidos:
 function validaForm(){
     var titulo  = document.getElementById('titulo');
     var autor   = document.getElementById('autor');
@@ -8,6 +9,7 @@ function validaForm(){
     }
 }
 
+//Audios do auxiliar audivel
 var audio1 = document.getElementById('infoTutorial')
 function infoTutorial(){
     audio1.play();
@@ -19,7 +21,7 @@ function tutorial(){
     
 }
 
-
+//Cria elementos para alteração dos livros no formLivro.php
 function alterar(){
     var alerta = document.getElementById('alerta');
     alerta.style.color = 'yellow';
@@ -32,7 +34,7 @@ function alterar(){
     
     }
 
-
+//Cria elementos para exclusão dos livros no formLivro.php
 function excluir(){
     var alerta = document.getElementById('alerta');
     alerta.style.color = 'red';
@@ -45,7 +47,7 @@ function excluir(){
     opcao.innerHTML = ('<input type="submit" value="Excluir" class="btn btn-danger">')
 }
 
-
+//Cria elementos para incluir livros no formLivro.php
 function inserir(){
     document.getElementById('inputCodigo').style.display = 'none';
     var titulo = document.getElementById('titulo')
@@ -62,7 +64,6 @@ function inserir(){
 
 
 var urlAtual = window.location.href;
-
 var iExcluir = 0;
 var iAlterar = 0;
 
