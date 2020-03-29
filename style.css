@@ -61,11 +61,13 @@ footer
     font-family: sans-serif;
     color: black;
     font-style: italic;
+    
 }
 #autor{
     font-family: sans-serif;
     color: black;
     font-style: italic;
+    
 }
 #teste1{
     text-align: center;
@@ -77,6 +79,7 @@ footer
     font-family: sans-serif;
     color: black;
     font-style: italic;
+
 }
 
 #nomePaginas, #nomeAutor, #nomeTitulo, #labelCodigo{
@@ -97,4 +100,18 @@ footer
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 200);
     margin: 40px;
+}
+
+#pesuisaLivro{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+    top: 250px;
+    right: 16px;
+}
+input{
+    padding: 10px;
+    
 }

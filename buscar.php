@@ -1,11 +1,14 @@
 <?php
-    //session_start;
-    include "conexao.php";
-    //include "seguranca.php";
+        include "conexao.php";
+
+        $codigoURL  = $_GET["buscaLivro"];
+        if($codigoURL == ''){
+            $sql = "SELECT * from livros";
+        }else{
+            $sql = "SELECT * from livros WHERE livCodigo = $codigoURL";
+        }
 
     
-
-    $sql = "select * from livros";
     $resultado = mysqli_query($conexao, $sql);
 
     $listaLivros = array();
@@ -14,9 +17,8 @@
         $listaLivros[] = $livros;
     }
 
+    
 ?>
-
-
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -37,7 +39,7 @@
 
   <form method='GET' action='buscar.php'>
         
-        <input type="number" id="teste" name="buscaLivro" min="1" max="99999999" placeholder="Cod. livro"> <button type="submit" class="btn btn-outline-info">Buscar</button> 
+        <input type="number" name="buscaLivro" min="1" max="99999999" placeholder="Cod. livro"> <button type="submit" class="btn btn-secondary">Buscar</button> 
 
     </form>
 </nav>
@@ -69,7 +71,7 @@
             </tr>
     
     
-    <?php foreach ($listaLivros as $livro ) :?>
+<?php foreach ($listaLivros as $livro ) :?>
     <tr>
         <td> <?php echo $livro['livCodigo']; ?> </td>
         <td> <?php echo $livro['livTitulo']; ?> </td>
@@ -78,12 +80,10 @@
         <td> <center><a type="button" class="btn btn-danger" onclick="funcaoExcluir();"  href="formLivro.php?acao=e&cod=<?php echo $livro['livCodigo']; ?>">Excluir</a></center></td>
     </tr>
     <?php endforeach; 
-    
 ?>
-
-     </table>
-     </div>
-     </div>
-    </body>
-    <script src="script.js"></script>
+</table>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
 </html>

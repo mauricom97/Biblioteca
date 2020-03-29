@@ -55,13 +55,14 @@
             
         </div>
         
-            <?php if($pegaAcao == 'i' ){ 
-            echo "<form method='POST' action='processa.php'>";
-        }else if($pegaAcao == 'a'){
-            echo "<form method='GET' action='altera.php'>";
-        }else if($pegaAcao == 'e'){
-            echo "<form method='GET' action='exclui.php'>";
-        }
+        <?php if($pegaAcao == 'i' ){ 
+                echo "<form method='POST' action='processa.php'>";
+            }else if($pegaAcao == 'a'){
+                echo "<form method='GET' action='altera.php'>";
+            }else if($pegaAcao == 'e'){
+                echo "<form method='GET' action='exclui.php'>";
+            }
+        
         ?>
 
 
