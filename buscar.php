@@ -63,8 +63,9 @@
         <div id="tabela">
         <table class="table table-sm table-dark" border=1>
             
-            <tr id="teste1">
+        <tr id="teste1">
                 <td>Código</td>
+                <td>Status</td>
                 <td>Título</td>
                 <td>Autor</td>
       <td colspan=2>Opções</td>
@@ -74,7 +75,8 @@
     
 <?php foreach ($listaLivros as $livro ) :?>
     <tr>
-        <td> <?php echo $livro['livCodigo']; ?> </td>
+    <td><center><?php echo $livro['livCodigo']; ?><img src="img/livro1.png" width="30" height="30" alt=""></center></td>
+        <td><center><?php echo $livro['livStatus']; ?></center></td>
         <td> <?php echo $livro['livTitulo']; ?> </td>
         <td> <?php echo $livro['livAutor']; ?> </td>
         <td> <center><a type="button" class="btn btn-warning" onclick="funcaoAlterar();"  href="formLivro.php?acao=a&cod=<?php echo $livro['livCodigo']; ?>">Alterar</a></center> </td>

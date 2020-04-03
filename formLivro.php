@@ -69,17 +69,17 @@
             <input name="inputCodigo" id="inputCodigo" value="<?php echo $pegaCodigo ?>" type="number" placeholder="Codigo" max="9999999" min="0"><br><br>
             
             <label id="nomeTitulo">Titulo do livro:</label><br>
-            <input type="text" value="<?php echo $livro['livTitulo']; ?>" id="titulo1" name="titulo1" placeholder="Titulo | Ex: Narnia"><br><br>
+            <center><input type="text" value="<?php echo $livro['livTitulo']; ?>" id="titulo1" name="titulo1" placeholder="Titulo | Ex: Narnia"></center><br><br>
             
             <label id="nomeAutor">Autor:</label><br>
-            <input type="text" value="<?php echo $livro['livAutor'];  ?>" id="autor" name="autor" placeholder="Autor | EX: Clive Staples"><br><br>
+            <center><input type="text" value="<?php echo $livro['livAutor'];  ?>" id="autor" name="autor" placeholder="Autor | EX: Clive Staples"></center><br><br>
             
             <label id="nomePaginas">Paginas:</label><br>
-            <input type="number" placeholder="Paginas | EX: 752" id="numPaginas" min="1" value="<?php echo $livro['livPaginas']; ?>" name="paginas"><br><br>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>   
+            <center><input type="number" placeholder="Paginas | EX: 752" id="numPaginas" min="1" value="<?php echo $livro['livPaginas']; ?>" name="paginas"></center><br><br>
+            <input type="radio" id="disponivel" name="status" value="Disponivel">
+            <label id="labelDisponivel" for="male">Disponivel</label><br>
+            <input type="radio" id="emprestado" name="status" value="Emprestado">
+            <label id="labelEmprestado" for="female">Emprestado</label><br>   
             <p id="alerta"></p>
             <center><div id="opcao"></div></center>
 
