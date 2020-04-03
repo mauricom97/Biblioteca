@@ -100,4 +100,3 @@ function verificaDados(){
 
 
 var valVerfica = setInterval(verifica, alterar, 1);
-

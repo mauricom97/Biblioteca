@@ -8,6 +8,9 @@
     $sql = "select * from livros";
     $resultado = mysqli_query($conexao, $sql);
 
+    $qtdLinhas = mysqli_num_rows($resultado);
+    
+
     $listaLivros = array();
     while ($livros = mysqli_fetch_assoc($resultado))
     {
@@ -23,6 +26,7 @@
         <title id="bibliotecaParticular">Biblioteca Particular</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <audio id="tutorial" src="audios\tutorial.mp3"></audio>
         <audio id="infoTutorial" src="audios\infoTutorial.mp3"></audio>
     </head>
@@ -62,20 +66,25 @@
             
             <tr id="teste1">
                 <td>Código</td>
+                <td>Status</td>
                 <td>Título</td>
                 <td>Autor</td>
       <td colspan=2>Opções</td>
+                
+                
                 
             </tr>
     
     
     <?php foreach ($listaLivros as $livro ) :?>
     <tr>
-        <td> <?php echo $livro['livCodigo']; ?> </td>
+        <td><center><?php echo $livro['livCodigo']; ?><img src="img/livro1.png" width="30" height="30" alt=""></center></td>
+        <td><center><?php echo $livro['livStatus']; ?></center></td>
         <td> <?php echo $livro['livTitulo']; ?> </td>
         <td> <?php echo $livro['livAutor']; ?> </td>
         <td> <center><a type="button" class="btn btn-warning" onclick="funcaoAlterar();"  href="formLivro.php?acao=a&cod=<?php echo $livro['livCodigo']; ?>">Alterar</a></center> </td>
         <td> <center><a type="button" class="btn btn-danger" onclick="funcaoExcluir();"  href="formLivro.php?acao=e&cod=<?php echo $livro['livCodigo']; ?>">Excluir</a></center></td>
+        
     </tr>
     <?php endforeach; 
     
@@ -83,7 +92,7 @@
 
      </table>
      </div>
-     </div>
+     </div>  
     </body>
     <script src="script.js"></script>
 </html>

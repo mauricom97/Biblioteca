@@ -58,13 +58,13 @@ footer
     border-color: rgba(209, 223, 6, 0.849);
 }
 #titulo1{
-    font-family: sans-serif;
+    font-family: 'Pacifico', cursive;
     color: black;
     font-style: italic;
     
 }
 #autor{
-    font-family: sans-serif;
+    font-family: 'Pacifico', cursive;
     color: black;
     font-style: italic;
     
@@ -76,7 +76,7 @@ footer
     text-align: center;
 }
 #numPaginas{
-    font-family: sans-serif;
+    font-family: 'Pacifico', cursive;
     color: black;
     font-style: italic;
 
@@ -95,8 +95,8 @@ footer
     background-color: rgb(84, 2, 122);
     border-radius: 35px;
     padding: 15px;
-    width: 320px;
-    height: 250px;
+    width: 350px;
+    height: 310px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 200);
     margin: 40px;
@@ -111,7 +111,40 @@ footer
     top: 250px;
     right: 16px;
 }
+
+#tabela{
+    font-family: 'Pacifico', cursive;
+}
+button{
+    font-family: 'Pacifico', cursive;
+}
 input{
+    font-family: 'Pacifico', cursive;
     padding: 10px;
-    
+}
+#botaoIncluir{
+    font-family: 'Pacifico', cursive;
+}
+p{
+    font-family: 'Pacifico', cursive;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+}
+#infos{
+    font-family: 'Pacifico', cursive;
+}
+label{
+    font-family: 'Pacifico', cursive;
+}
+
+
+#sectionForm{
+    background-color: rgb(84, 2, 122);
+    border-radius: 35px;
+    padding: 15px;
+    width: 400px;
+    height: 550px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 200);
 }

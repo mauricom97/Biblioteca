@@ -15,7 +15,7 @@
         <div>
             <center><h1 id="titulo">Login usuario</h1></center>
         </div>
-            <form action="entrar.php" method="post">
+            <form action="entrar.php" method="POST">
             <table>
                 <tr>
                 <td><label id="user" for="fUsuario">Usuario:</label></td>
