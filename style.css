@@ -15,7 +15,7 @@ section
     border-radius: 35px;
     padding: 15px;
     width: 400px;
-    height: 550px;
+    height: 600px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 200);
     
@@ -37,30 +37,30 @@ footer
     color: white;
 }
 #explicacao{
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    z-index: 100;
-    top: 100px;
-    right: 16px;
+    cursor:     pointer;
+    width:      60px;
+    height:     60px;
+    position:   fixed;
+    z-index:    100;
+    top:        100px;
+    right:      16px;
     
 }
 #infos{
-    color: white;
-    text-align: center;
+    color:        white;
+    text-align:     center;
 }
 
 #botao{
-    padding: 5%;
-    border-radius: 10%;
-    font-family: monospace;
+    padding:        5%;
+    border-radius:  10%;
+    font-family:    monospace;
     border-color: rgba(209, 223, 6, 0.849);
 }
 #titulo1{
-    font-family: 'Source Code Pro', monospace;
-    color: black;
-    font-style: italic;
+    font-family:    'Source Code Pro', monospace;
+    color:         black;
+    font-style:      italic;
     
 }
 #autor{
@@ -95,8 +95,8 @@ footer
     background-color: rgb(84, 2, 122);
     border-radius: 35px;
     padding: 15px;
-    width: 370px;
-    height: 350px;
+    width: 390px;
+    height: 380px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 200);
     margin: 40px;
@@ -144,10 +144,14 @@ label{
     border-radius: 35px;
     padding: 15px;
     width: 400px;
-    height: 600px;
+    height: 650px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 200);
 }
 #labelDisponivel, #labelEmprestado{
     color: rgb(251, 255, 0);
+}
+
+#erroLogin{
+    background-color: rgba(6, 125, 223, 0.795);
 }

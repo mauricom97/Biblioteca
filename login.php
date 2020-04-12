@@ -12,7 +12,7 @@
 <body>
 <center>
     <section id="login">
-        <center><img src="img/user.png" width="50px" height="50px"></center>
+        <center><img src="img/user.png" width="100px" height="100px"></center>
         <div>
             <center><h1 id="titulo">Login usuario</h1></center>
         </div>
@@ -20,7 +20,7 @@
             <table>
                 <tr>
                 <td><label id="user" for="fUsuario">Usuario:</label></td>
-                <td><input type="text" placeholder="exemple.demonstration" id="fUsuario" name="fUsuario"></td>
+                <td><input type="email" placeholder="email@domain.com" id="fUsuario" name="fUsuario"></td>
             </tr>
             <tr>
                 <td><label id="pass" for="fSenha">Senha:</label></td>
@@ -31,9 +31,11 @@
 
             </tr>
 
-                <td><input type="submit" value="Entrar"></td>
-                <td><input type="reset" value="Limpar"></td>
+                
         </table>
+        <br>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
         </form>
         <div>
 

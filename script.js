@@ -100,3 +100,22 @@ function verificaDados(){
 
 
 var valVerfica = setInterval(verifica, alterar, 1);
+
+
+tempoRetorno = 10;
+function erroLogin(){
+    tempoRetorno--
+    var error = document.getElementById('segundos');
+    error.innerHTML = `<h2>${tempoRetorno}</h2>`
+    if(tempoRetorno == 0 ){
+        telaLogin();
+    }
+}
+
+
+
+function telaLogin(){
+    window.location.href = "login.php";
+}
+
+setInterval(erroLogin, 1000);

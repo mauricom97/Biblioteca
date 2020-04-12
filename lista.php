@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <audio id="tutorial" src="audios\tutorial.mp3"></audio>
-        <audio id="infoTutorial" src="audios\infoTutorial.mp3"></audio>
+        
     </head>
 
     <body onLoad="listarTodos();">
@@ -45,7 +45,7 @@
     
     
     <div class="container">
-    <img src="img\volume.png" id="explicacao" alt="Explicando a pagina" onmouseover="infoTutorial();" onclick="tutorial();">
+    <img src="img/desligar.png" onclick = "telaLogin();" id="explicacao" >
 
 
     <div id="bibliotecaP"> 
