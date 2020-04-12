@@ -44,7 +44,7 @@ function excluir(){
     var titulo = document.getElementById('titulo')
     titulo.innerHTML = (`Excluir livros`)
     var opcao = document.getElementById('opcao');
-    opcao.innerHTML = ('<input type="submit" value="Excluir" class="btn btn-danger">')
+    opcao.innerHTML = ('<input type="submit" onclick="confirmaEX();" value="Excluir" class="btn btn-danger">')
 }
 
 //Cria elementos para incluir livros no formLivro.php

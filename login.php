@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modelo de exercicio</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <center>
     <section id="login">
-
+        <center><img src="img/user.png" width="50px" height="50px"></center>
         <div>
             <center><h1 id="titulo">Login usuario</h1></center>
         </div>
@@ -27,9 +28,11 @@
             </tr>
             <br>
             <tr>
+
+            </tr>
+
                 <td><input type="submit" value="Entrar"></td>
                 <td><input type="reset" value="Limpar"></td>
-            </tr>
         </table>
         </form>
         <div>

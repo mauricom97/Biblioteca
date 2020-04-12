@@ -1,10 +1,6 @@
 <?php
-    //session_start;
-    include "conexao.php";
-    //include "seguranca.php";
-
-    
-
+	//include "seguranca.php";
+	include "conexao.php";
     $sql = "select * from livros";
     $resultado = mysqli_query($conexao, $sql);
 

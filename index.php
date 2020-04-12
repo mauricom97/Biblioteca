@@ -1,6 +1,5 @@
 <?php
-session_start;
-include "conexao.php";
+    session_start();
     $_SESSION['usuario'] = "";
     header("Location: login.php");
 ?>

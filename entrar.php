@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "conexao.php";
 
 $usu = $_POST['fUsuario'];

@@ -33,7 +33,7 @@
     <body onLoad="listarTodos();">
         <!-- Image and text -->
 <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="">
+  <a class="navbar-brand" href="http://localhost/biblioteca/lista.php">
     <img src="https://cdn.pixabay.com/photo/2016/10/06/19/02/book-1719737_960_720.png" width="30" height="30" class="d-inline-block align-top" alt="">
     Biblioteca
   </a>
