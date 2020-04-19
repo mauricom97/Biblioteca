@@ -117,6 +117,7 @@ footer
 }
 button{
     font-family: 'Source Code Pro', monospace;
+    transition: 0.5;
 }
 input{
     font-family: 'Source Code Pro', monospace;

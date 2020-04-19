@@ -17,7 +17,7 @@ $resultado_livros = mysqli_query($conn, $result_livros);
 
 if(mysqli_insert_id($conn)){
     $_SESSION['msg'] = "Livro cadastrado com sucesso";
-    header("Location: lista.php");
+    header("Location: 'lista_livros.php");
 }else{
     
     }

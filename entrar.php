@@ -16,7 +16,7 @@ $qtdLinhas = mysqli_num_rows($resultado);
 
     if($qtdLinhas == 1)
     {
-        header("Location: lista.php");
+        header("Location: principal.php");
     }
     else
     {

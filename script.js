@@ -9,17 +9,6 @@ function validaForm(){
     }
 }
 
-//Audios do auxiliar audivel
-var audio1 = document.getElementById('infoTutorial')
-function infoTutorial(){
-    audio1.play();
-}
-function tutorial(){
-    var audio = document.getElementById('tutorial')
-    audio.play();
-    audio1.pause();
-    
-}
 
 //Cria elementos para alteração dos livros no formLivro.php
 function alterar(){
@@ -118,4 +107,9 @@ function telaLogin(){
     window.location.href = "login.php";
 }
 
-setInterval(erroLogin, 1000);
+
+ 
+
+
+var intervaloErro = setInterval(erroLogin, 1000);
+

@@ -34,7 +34,7 @@
     <img src="https://cdn.pixabay.com/photo/2016/10/06/19/02/book-1719737_960_720.png" width="30" height="30" class="d-inline-block align-top" alt="">
     Biblioteca
   </a>
-
+    <a href="principal.php">Pagina Inicial</a> 
   <form method='GET' action='buscar.php'>
         
         <input type="number" id="teste" name="buscaLivro" min="1" max="99999999" placeholder="Cod. livro"> <button type="submit" class="btn btn-outline-info">Buscar</button> 

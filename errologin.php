@@ -11,7 +11,7 @@
         <title>Biblioteca Particular</title>
     </head>
 <body id="erroLogin" onload="erroLogin();">
-    <center><h1>Biblioteca Particular</h1></center>
+
     <center><img src="img/duvida.png" heigth="300px" width="300px"></center>
     <br>
     <br>

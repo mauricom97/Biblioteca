@@ -15,4 +15,4 @@ $result_livros = "UPDATE livros SET livTitulo = '$titulo', livAutor = '$autor', 
 
 $resultado_livros = mysqli_query($conn, $result_livros);
 
-header("Location: lista.php");
+header("Location: lista_livros.php");

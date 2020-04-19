@@ -11,4 +11,4 @@ $result_livros = "DELETE FROM `biblioteca`.`livros` WHERE (`livCodigo` = '$codig
 
 $resultado_livros = mysqli_query($conn, $result_livros);
 
-header("Location: lista.php");
+header("Location: lista_livros.php");
